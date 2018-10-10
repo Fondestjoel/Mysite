@@ -1,0 +1,318 @@
+body{
+  background:url("../images/grey.jpg")no-repeat;
+  font:15px/1.5 Ubuntu;
+  padding:0;
+  margin:0;
+}
+/*Global*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+
+}
+.button_1{
+  height:26px;
+  background:#e8492a;
+  border:none;
+  padding-right:15px;
+  padding-left:15px;
+  color:#ffffff;
+}
+
+.dark{
+padding:15px;
+background:#35424a;
+color:#ffffff;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+/*header*/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:20px;
+  min-height:70px;
+  border-bottom:#e8492a 3px solid;
+}
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+header ul{
+  margin:0;
+  padding:0;
+}
+header li{
+  float:none;
+  display:inline;
+  padding:0 20px 0 20px;
+}
+header nav{
+  margin:10px;
+}
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+/*Landing*/
+
+#landing{
+  min-height:280px;
+  background:url("../images/front.jpg") no-repeat 0 -50px;
+  text-align:center;
+  color:#cccccc;
+}
+
+#landing h1{
+  margin-top:300px;
+  margin-bottom:10px;
+  font-size:50px;
+  color:#e8492a;
+}
+#landing h1:hover{
+  color:#ffffff;
+  font-weight:bold;
+}
+
+/*Gists*/
+#gists{
+  padding:15px;
+  color:#cccccc;
+  background:#35424a;
+}
+#gists h5{
+  float:left;
+  
+}
+#gists form{
+  float:right;
+  margin-top:3px;
+}
+#gists input[type="email"] {
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+/*features*/
+
+#features{
+  margin-top:0px;
+  min-height:400px;
+  background:url("../images/project.jpg") no-repeat;
+  border-top:#e8492a 3px solid;
+}
+#features h1{
+  color:#35424a;
+  font-weight:bold;
+  text-align:center;
+  margin-top:10px;
+}
+
+/*Styling for About us*/
+/*sidebar*/
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input,aside#sidebar .textarea{
+  width:90%;
+  padding:5px;
+}
+ul#team li{
+  list-style: none;
+  padding:25px;
+  border:#cccccc solid 1px;
+  margin-top: 15px;
+  background: #e8492a;
+  color:#050505;
+  
+  }
+  
+/* About Us Main-col*/
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/*Join*/
+article#join{
+  border:#cccccc solid 1px;
+  background: #e8492a;
+  columns: #050505;
+  padding:20px;
+  margin-top:22px;
+  float:left;
+  width:65%;
+}
+/*Programmes*/
+
+ul#programmes li{
+list-style: none;
+padding:20px;
+margin-top:15px;
+border:#cccccc solid 1px;
+margin-bottom: 3px;
+background: #e8492a;
+color:#050505;
+}
+/*Media Centre*/
+.first{
+  margin-top:15px;
+}
+
+.first li{
+  list-style: none;
+padding:10px;
+margin-top:15px;
+border:#cccccc solid 0px;
+margin-bottom: 2px;
+background: #e8493c;
+color:#050505;
+
+}
+
+footer{
+  padding:10px;
+  margin-top:10px;
+  color:#35424a;
+  background-color: #e8492a;
+  text-align:center;
+}
+/*Social Media Links*/
+.fa {
+  padding:8px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  list-style:inline;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  list-style:inline;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  list-style:inline;
+  background: #007bb5;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+/*Media Queries*/
+@media(max-width:768px){
+  header #branding,
+  header nav, 
+  header nav li,
+  #gists h1,
+  #gists form,
+  #features .features,
+  article#main-col,
+  aside#sidebar,
+  #programmes li,
+  .fa, 
+  #team li, 
+  article#join,
+  #join form,
+  .first,
+  .first li
+  {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+  #landing h1{
+    margin-top:40px;
+  }
+#gists button, .quote button{
+  display:block;
+  width:100%;
+}
+#gists form input[type="email"], .quote input, .quote textarea{
+  margin-bottom:5px;
+  width:100%;
+
+}
+#join form input[type="CV"], .quote input, .quote textarea{
+  margin-bottom:5px;
+  width:100%;}
+
+  #join button, .quote button{
+    display:block;
+    width:100%;}
+    #contact{
+      background-color:#f1f1f1;
+      font-family: Ubuntu;
+  }
+  /*Contact*/
+
+  #contact .well{
+      margin-top:30px;
+      border-radius:0;
+
+  }
+  
+  #contact .form-control{
+      border-radius: 0;
+      border:2px solid #1e1e1e;
+    
+  }
+  
+  #contact button{
+      border-radius:0;
+      border:2px solid #1e1e1e;
+  }
+  
+  #contact .row{
+      margin-bottom:30px;
+      
+  }
+  
+  @media (max-width: 768px) { 
+      #contact iframe {
+          margin-bottom: 15px;
+      }
+      
+  }
+
+/*Additional media*/
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+
+
+
+
